@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Ejemplo Básico: Hola Mundo Three.js</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="../libs/three.min.js"></script>
+    <script type="text/javascript" src="../libs/jquery.js"></script>
+    <script type="text/javascript" src="../libs/dat.gui.js"></script>
+    <script type="text/javascript" src="../libs/TrackballControls.js"></script>
+    <script type="text/javascript" src="../libs/ThreeBSP.js"></script>
+    <script type="text/javascript" src="../libs/LoaderSupport.js"></script>
+    <script type="text/javascript" src="../libs/MTLLoader.js"></script>
+    <script type="text/javascript" src="../libs/OBJLoader2.js"></script>
+    <script type="text/javascript" src="../libs/Tween.js"></script>
+    <script type="text/javascript" src="../libs/Octree.js"></script>
+    <!-- El órden en el que se colocan los scripts es importante, si MyScene llama a MyBox,
+    entonces MyBox tiene que estar antes. Si añado nuevas clases o bibliotecas tendré que
+    colocarlas aquí -->
+    <script type="text/javascript" src="MyBox.js"></script>
+    <script type="text/javascript" src="MyTorus.js"></script>
+    <script type="text/javascript" src="Revolucion.js"></script>
+    <script type="text/javascript" src="Extrude.js"></script>
+    <script type="text/javascript" src="CSG.js"></script>
+    <script type="text/javascript" src="OBJ.js"></script>
+    <script type="text/javascript" src="Pendulo.js"></script>
+    <script type="text/javascript" src="Reloj.js"></script>
+    <script type="text/javascript" src="PendulosAnim.js"></script>
+    <script type="text/javascript" src="SatelitesA.js"></script>
+    <script type="text/javascript" src="BolaSaltarina.js"></script>
+    <script type="text/javascript" src="TestTween.js"></script>
+    <script type="text/javascript" src="Elipse.js"></script>
+    <script type="text/javascript" src="Recorrido.js"></script>
+    <script type="text/javascript" src="Examen.js"></script>
+    <script type="text/javascript" src="MyScene.js"></script>    
+    <script type="text/javascript" src="script.js"></script>    
+    <style>
+        body{
+            margin: 0;
+            overflow: hidden; 
+        }
+    </style>
+</head>
+<body>
+
+<!-- Div which will hold the Output -->
+<div id="WebGL-output">
+</div>
+</body>
+</html>
