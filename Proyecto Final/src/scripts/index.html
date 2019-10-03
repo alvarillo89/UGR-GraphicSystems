@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Helix Jump</title>
+        <meta charset="utf-8">
+        <!-- Bibliotecas -->
+        <script type="text/javascript" src="../libs/three.min.js"></script>
+        <script type="text/javascript" src="../libs/jquery.js"></script>
+        <script type="text/javascript" src="../libs/Tween.js"></script>
+        <script type="text/javascript" src="../libs/stats.js"></script>
+        <script type="text/javascript" src="../libs/three.proton.min.js"></script>
+        <!-- Scripts de la aplicación -->
+        <script type="text/javascript" src="Ball.js"></script>
+        <script type="text/javascript" src="Helix.js"></script>
+        <script type="text/javascript" src="Scene.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+ 
+        <style>
+            body{
+                margin: 0;
+                overflow: hidden; 
+            }
+
+            html{
+                background: #714580;
+                background: -moz-linear-gradient(top,  #E28AFF 0%, #714580 100%);
+                background: -webkit-linear-gradient(top,  #E28AFF 0%,#714580 100%);
+                background: linear-gradient(to bottom,  #E28AFF 0%,#714580 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E28AFF', 
+                    endColorstr='#714580',GradientType=0 ); 
+            }
+
+            @font-face {
+                font-family: "Custom";
+                src: url("../css/fonts/Quicksand-Medium.ttf");
+            }
+
+            .gameover{
+                color: black;
+                font-family: 'Custom', sans-serif;
+            }
+
+            h1{
+                color:#FFFFE7;
+                font-family: 'Custom', sans-serif;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Texto para mostrar la puntuación -->
+        <div style="position: fixed; 
+            left:100px; 
+            padding: 10px;
+            top:300px; 
+            border: 5px solid #4F2445;" id="Puntuation">
+        </div>
+
+        <!-- Texto para mostrar el GameOver -->
+        <div style="position: fixed; 
+            left:490px; 
+            top:500px;" id="GameOver">
+        </div>
+
+        <div id="WebGL-output"></div>
+    </body>
+</html>
