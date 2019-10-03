@@ -1,2 +1,2 @@
 # UGR Graphic Systems
-Subject Practices: Graphic Systems (UGR). Developed with JavaScript and THREE.js
+Made for the subject of Graphic Systems at the UGR. Developed with JavaScript and THREE.js
